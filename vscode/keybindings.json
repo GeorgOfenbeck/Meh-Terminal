@@ -1,0 +1,291 @@
+// Curated shortcuts using hyper key (ctrl+shift+alt) for navigating
+// requires single hyper key using custom keyboard or use:
+// https://gist.github.com/nat-418/135a62fb9f37cc87cd70af1ab72e276a
+//
+// Be warned that you may need to remove or change some emoji/unicode
+// bindings in ibus-setup as I found these clashed on RedHat and Ubuntu
+[
+    // error navigation
+    {
+        "key": "ctrl+shift+alt+\\",
+        "command": "editor.action.marker.prev",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+/",
+        "command": "editor.action.marker.next",
+        "when": "editorFocus"
+    },
+    // changes navigation
+    {
+        "key": "ctrl+shift+alt+/",
+        "command": "workbench.action.compareEditor.nextChange",
+        "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "ctrl+shift+alt+\\",
+        "command": "workbench.action.compareEditor.previousChange",
+        "when": "textCompareEditorVisible"
+    },
+    // These are for navigating between panes ----------------------------------
+    //
+    // switch to terminal
+    {
+        "key": "alt+ctrl+shift+e",
+        "command": "workbench.action.terminal.focus",
+    },
+    // switch to editors
+    {
+        "key": "alt+ctrl+shift+u",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "!editorFocus"
+    },
+    // focus to the right in editors
+    {
+        "key": "alt+ctrl+shift+a",
+        "command": "workbench.action.focusNextGroup",
+    },
+    // focus left in editors
+    {
+        "key": "alt+ctrl+shift+h",
+        "command": "workbench.action.focusPreviousGroup",
+        "when": "activeEditorGroupIndex!=1",
+    },
+    // focus the sidebar, moving left from first group
+    {
+        "key": "ctrl+shift+alt+h",
+        "command": "workbench.action.focusSideBar",
+        "when": "activeEditorGroupIndex==1",
+    },
+    // focus the activity bar, moving left from the sidebar
+    {
+        "key": "ctrl+shift+alt+h",
+        "command": "workbench.action.focusActivityBar",
+        "when": "sideBarFocus",
+    },
+    // focus the first group, moving right from the side bar
+    {
+        "key": "ctrl+shift+alt+a",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "sideBarFocus",
+    },
+    // focus right in terminals
+    {
+        "key": "alt+ctrl+shift+a",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
+    },
+    // focus left in terminals
+    {
+        "key": "alt+ctrl+shift+h",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus"
+    },
+    // These are for splitting / sizing panes -------------------------------------------
+    // split terminal
+    {
+        "key": "alt+ctrl+shift+q",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus"
+    },
+    // split editor left right
+    {
+        "key": "alt+ctrl+shift+q",
+        "command": "workbench.action.splitEditor",
+        "when": "editorFocus"
+    },
+    // split editor up down
+    {
+        "key": "alt+ctrl+shift+6",
+        "command": "workbench.action.splitEditorOrthogonal",
+        "when": "editorFocus"
+    },
+    // close terminal pane
+    {
+        "key": "alt+ctrl+shift+0",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    // close other pane
+    {
+        "key": "alt+ctrl+shift+0",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "!terminalFocus"
+    },
+    // close all other editors in group
+    {
+        "key": "ctrl+shift+alt+P",
+        "command": "workbench.action.closeOtherEditors"
+    },
+    // terminal resize ---------------------------------------------------------
+    {
+        "key": "alt+ctrl+shift+8",
+        "command": "workbench.action.terminal.resizePaneUp",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+ctrl+shift+,",
+        "command": "workbench.action.terminal.resizePaneDown",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+j",
+        "command": "workbench.action.terminal.resizePaneLeft",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+;",
+        "command": "workbench.action.terminal.resizePaneRight",
+        "when": "terminalFocus"
+    },
+    // editor resize ----------------------------------------------------------
+    {
+        "key": "ctrl+shift+alt+8",
+        "command": "workbench.action.increaseViewHeight",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+,",
+        "command": "workbench.action.decreaseViewHeight",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+i",
+        "command": "workbench.action.increaseViewWidth",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+j",
+        "command": "workbench.action.decreaseViewWidth",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "alt+ctrl+shift+9",
+        "command": "workbench.action.increaseViewSize",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "alt+ctrl+shift+7",
+        "command": "workbench.action.decreaseViewSize",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "alt+ctrl+shift+;",
+        "command": "workbench.action.evenEditorWidths",
+        "when": "!terminalFocus"
+    },
+    // shift editor windows between groups
+    {
+        "key": "shift+alt+ctrl+shift+o",
+        "command": "workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "shift+alt+ctrl+shift+l",
+        "command": "workbench.action.moveEditorToPreviousGroup"
+    },
+    // move between editor pages
+    {
+        "key": "ctrl+shift+alt+.",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+shift+alt+m",
+        "command": "workbench.action.previousEditor"
+    },
+    // a few other useful things ------------------------------------------------
+    // my preferred save all shortcut
+    {
+        "key": "ctrl+shift+s",
+        "command": "workbench.action.files.saveFiles"
+    },
+    // navigate forward (like browser)
+    {
+        "key": "alt+right",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    // navigate back (like browser)
+    {
+        "key": "alt+left",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    // easier jumps to side bar items using hyper key plus left hand top row,
+    // a, d, f
+    //
+    // hyper plus:
+    // a = activity bar (which can access the rest using arrows
+    // d = debug
+    // e = explorer
+    // r / f = repositories / source control
+    // rest of top row left hand:
+    // q = extensions, w = timeline, t = testing
+    {
+        "key": "shift+alt+ctrl+shift+s",
+        "command": "workbench.action.focusActivityBar"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "-workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "alt+ctrl+shift+d",
+        "command": "workbench.view.explorer",
+    },
+    {
+        "key": "alt+ctrl+shift+p",
+        "command": "workbench.scm.repositories.focus"
+    },
+    {
+        // scm is the key below source repositories like it is in the panel
+        "key": "shift+alt+ctrl+shift+c",
+        "command": "workbench.view.scm",
+    },
+    {
+        "key": "alt+ctrl+shift+t",
+        "command": "workbench.view.debug",
+    },
+    {
+        "key": "alt+ctrl+shift+w",
+        "command": "workbench.view.testing.focus",
+    },
+    {
+        "key": "alt+ctrl+shift+z",
+        "command": "workbench.view.extensions",
+    },
+    {
+        "key": "alt+ctrl+shift+r",
+        "command": "timeline.focus",
+        // end of manually edited keybindings -----------------------------------
+    },
+    {
+        "key": "ctrl+i",
+        "command": "-extension.vim_ctrl+i",
+        "when": "editorTextFocus && vim.active && vim.use<C-i> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+; ctrl+i",
+        "command": "-testing.toggleInlineTestOutput"
+    },
+    {
+        "key": "shift+f5",
+        "command": "workbench.action.debug.run",
+        "when": "debuggersAvailable && debugState != 'initializing'"
+    },
+    {
+        "key": "ctrl+f5",
+        "command": "-workbench.action.debug.run",
+        "when": "debuggersAvailable && debugState != 'initializing'"
+    },
+    {
+        "key": "ctrl+f5",
+        "command": "workbench.action.debug.disconnect",
+        "when": "focusedSessionIsAttach && inDebugMode"
+    },
+    {
+        "key": "shift+f5",
+        "command": "-workbench.action.debug.disconnect",
+        "when": "focusedSessionIsAttach && inDebugMode"
+    },
+]
