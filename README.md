@@ -1,63 +1,44 @@
-# How to get the 'Meh'  (Ctrl-Alt-Shift / C-M-S (tmux) / C-A-S (vim)) Key to work in the terminal
+# Getting the 'Meh' Key (Ctrl+Shift+Alt / C-M-S / C-A-S) to Work in the Terminal
 
-If you are only interessted in the TL:DR check out how i replicated https://blog.zsa.io/vscode-tips/ for the Terminal [here](#terminal--tmux--nvim)
+If you're just looking for the TL;DR on replicating [this ZSA blog post](https://blog.zsa.io/vscode-tips/) for the terminal, check out the instructions [here](#terminal--tmux--nvim).
 
 ## Motivation
-I'm a big fan of using "special" modifier keys on my [ZSA Voyager Keyboard](https://www.zsa.io/voyager) that are not commonly used with regular keyboards.
+I'm a big fan of using "special" modifier keys on my [ZSA Voyager Keyboard](https://www.zsa.io/voyager) that are not commonly available on standard keyboards.
 
-I'm refering mainly to the "Meh" Key which is the eqivalent of pressing Ctrl-Alt-Shift and the Hyper Key which equals to Alt+Shift+Ctrl+Cmd.
+I'm referring specifically to the "Meh" key (equivalent to pressing `Ctrl+Alt+Shift`) and the "Hyper" key (equivalent to `Ctrl+Alt+Shift+Cmd`).
 
-Just think of them as your common Ctrl+B modifier in Tmux, your Ctrl+C/Cmd+C to copy etc.
+Think of them as analogous to common modifiers like `Ctrl+B` in Tmux or `Ctrl+C`/`Cmd+C` for copying. However, their unique advantage is that they avoid the "finger gymnastics" required on a standard keyboard, making them ideal for shortcuts without conflicts—unless, of course, Microsoft decides to misuse them (see [Windows](#windows)).
 
-What makes them special tough is that on a regular keyboard they require quite some finger gymnastics and are hence nearly never used for predefined shortcuts.
+### Keyboard Layout
+I use an [exotic keyboard layout](https://configure.zsa.io/voyager/layouts/erxEm/EGL5Q/2), "Recurva," customized for Windows and macOS on separate layers. Keep this in mind as my key positions might look unusual.
 
-And thats exactly the beauty of it - when configuring Meh/Hyper Shortcuts you basically never have to worry about conflicts with pre existing shortcuts. [unless MS decides to abuse it](#windows)
+### OS-Level Shortcuts using Hyper
 
-### Keyboard layout
-I have a bit of an [exotic keyboard layout](https://configure.zsa.io/voyager/layouts/erxEm/EGL5Q/2) - I'm using the "Recurva" layout - customized to windows and Mac OS on seperate layers.
-
-I mention this just that one doesn't get surpised by my shortcuts - as my key position are shifted some shortcuts might seem odd at first.
-
-### OS level shortcuts:
-
-Personally I used hyper keys for OS level shortcuts.
-#### Mac OS 
-E.g in MacOS i use the hyperkey with my left Keyboard Half with rectangular for Windows Movements.
-The right Keyboard Half I use with [Hammerspoon](https://github.com/GeorgOfenbeck/dotfiles/blob/main/hammerspoon/init.lua) to launch applications.
+#### macOS
+On macOS, I use the Hyper key for OS-level shortcuts. For example:
+- The left half of my keyboard is configured for [Rectangle](https://rectangleapp.com/) window movements.
+- The right half is set up with [Hammerspoon](https://github.com/GeorgOfenbeck/dotfiles/blob/main/hammerspoon/init.lua) to launch applications.
 
 #### Windows
-Windows unfortunatly is a bit harder to get to work with hyper keys.
-I use the [Fancy Zones](https://learn.microsoft.com/en-us/windows/powertoys/fancyzones) with their (to my knowledge) no easily modifiable shortcut to move windows.
+Windows makes using Hyper keys trickier:
+- I use [FancyZones](https://learn.microsoft.com/en-us/windows/powertoys/fancyzones) for window management, though its shortcuts are not easily customizable.
+- For application launching, I rely on [AutoHotkey](https://autohotkey.com/).
 
-For application launching i use [Auto Hotkey](https://autohotkey.com/)
+Unfortunately, Microsoft uses the Hyper key for its proprietary "Office" key, which you need to disable manually ([details here](https://deskthority.net/wiki/Hyper_key#:~:text=to%20another%20key.-,Microsoft%20Windows,Control%2BAlt%2BWindows%20simultaneously.)).
 
-Unfortunatly Microsoft decided they gonna abuse the Hyper Key for their custom Keyboards with a "Office" Key - one needs to disable this [manually](https://deskthority.net/wiki/Hyper_key#:~:text=to%20another%20key.-,Microsoft%20Windows,Control%2BAlt%2BWindows%20simultaneously.) 
+### Tooling Shortcuts using Meh
 
-
-### Tooling Shortcuts
-
-#### VS Code 
-Previously I mainly used VS Code for my coding work. Within VS Code i use my second set of shortcuts which are all based around the Meh Key.
-This was all inspired by the excellent article of [Giles Knap here on Github](https://github.com/gilesknap/zsa-voyager-vscode) which i found through his blog article on the [ZSA blog](https://blog.zsa.io/vscode-tips/).
-
-
-I moved my keybinds to Meh instead of hyper and atapted them to my keyboard layout - but kept the layout in terms of physical keys on the Voyager Keyboard - my config can be found [here](https://github.com/GeorgOfenbeck/Meh-Terminal/blob/main/vscode/keybindings.json).
+#### VS Code
+I originally used VS Code for coding, leveraging Meh-based shortcuts inspired by [this GitHub repository](https://github.com/gilesknap/zsa-voyager-vscode) and [blog post](https://blog.zsa.io/vscode-tips/). My modified keybindings, adapted to my layout, are available [here](https://github.com/GeorgOfenbeck/Meh-Terminal/blob/main/vscode/keybindings.json).
 
 #### Terminal / Tmux / Nvim
+As a heavy user of Vim motions in VS Code, transitioning to Neovim was a natural progression. I wanted to replicate the Meh shortcuts from VS Code for the terminal, which proved to be more challenging than expected. This repository aims to save others the trouble of figuring it out.
 
-I really liked the VS code workflow to change tabs/windows / move around.
-I'm a big user of Vim Motions in VS code. (can highly recommend [This plugin](https://marketplace.visualstudio.com/items?itemName=vintharas.learn-vim) if you want to start this journey as well)
-
-As it seems that for many thats just the entry drug into the whole NeoVim experience, I decided to also give that a try recently.
-As i really like the VS Code Meh Shortcuts I wanted to adapt that for the Terminal - turns out thats not as straightforward as expected.
-Long story short - the whole pupose of this git repo is to save someone else the trouble figuring it out.
-
-##### Terminal 
-You need to forward the Mey Key to the application running inside you terminal - that is not done by default.
-For debugging "showkey -a" 
-
-for Meh+r you want to get 
-```
+##### Terminal
+Forwarding the Meh key to terminal applications is not default behavior!
+I relied a lot on using `showkey -a` for debugging:
+E.g Meh+r should result in:
+```bah
 ➜ showkey -a
 
 Press any keys - Ctrl-D will terminate this program
@@ -75,20 +56,20 @@ Press any keys - Ctrl-D will terminate this program
         126 0176 0x7e
 ```
 
-To achive this in the windows terminal you need to forward the keys as shown [here](https://github.com/GeorgOfenbeck/Meh-Terminal/blob/main/windowsTerminal/settings.json) using [ms docu](https://learn.microsoft.com/en-us/windows/terminal/customize-settings/actions)
+For Windows Terminal, forward the keys as shown [here](https://github.com/GeorgOfenbeck/Meh-Terminal/blob/main/windowsTerminal/settings.json) and follow [Microsoft's documentation](https://learn.microsoft.com/en-us/windows/terminal/customize-settings/actions).
 
-For WezTerm i did it using this [config](https://github.com/GeorgOfenbeck/Meh-Terminal/blob/main/wezterm/bindings.lua)
+For WezTerm, this [configuration](https://github.com/GeorgOfenbeck/Meh-Terminal/blob/main/wezterm/bindings.lua) works for me.
 
-##### Multiplexing (Wezterm / Tmux)
-I first wanted to go with terminal native multiplexing in wezterm (my attempt can be found [here](https://github.com/GeorgOfenbeck/Meh-Terminal/blob/main/wezterm/bindings.lua.multiplex)) but ultimativly gave up on it and went with a "classic" tmux setup.
-The issue was that on windows making neovim/multiplexing setup seemless is very hard due to the wsl process being the detected one as described [here](https://github.com/wez/wezterm/issues/3137)
-If you are a pure linux / mac user that might still be an option for you if you dont wanna use tmux (e.g for performance reasons without the need for sessions)
+##### Multiplexing (WezTerm / Tmux)
+Initially, I explored native multiplexing in WezTerm ([attempt here](https://github.com/GeorgOfenbeck/Meh-Terminal/blob/main/wezterm/bindings.lua.multiplex)), but Windows' handling of WSL processes caused issues ([details here](https://github.com/wez/wezterm/issues/3137)). Linux/macOS users might still prefer this for performance reasons.
 
-In my case I went with a classic Tmux setup - but turns out also this was not straightforward - Tmux "swallows" the Mey Key by default - and forwarding it requires to configure forwarding Key Sequences similar to the Windows Terminal Setup.
+I ultimately chose Tmux but had to configure key sequence forwarding, as Tmux "swallows" the Meh key by default. My working configuration is available [here](https://github.com/GeorgOfenbeck/Meh-Terminal/blob/main/tmux/tmux.bindings.conf).
 
-The working config can be found [here](https://github.com/GeorgOfenbeck/Meh-Terminal/blob/main/tmux/tmux.bindings.conf) - it uses a similar setup as [vs code key layout](https://github.com/gilesknap/zsa-voyager-vscode/raw/main/navonly.svg).
+##### Neovim
+Integrating Tmux and Neovim for seamless window management "just worked." A minimal Neovim setup is [here](https://github.com/GeorgOfenbeck/Meh-Terminal/blob/main/nvim/init.lua).
 
-On my right [exotic keyboard layout](https://configure.zsa.io/voyager/layouts/erxEm/EGL5Q/2) that results in the following mapping:
+### Tmux Shortcut Layout
+My Tmux keybinding layout, inspired by [this VS Code layout](https://github.com/gilesknap/zsa-voyager-vscode/raw/main/navonly.svg), results in the following mappings for my right keyboard half
 
 
 | 6   | 7   | 8   | 9   | 0   | -           |
@@ -103,10 +84,9 @@ On my right [exotic keyboard layout](https://configure.zsa.io/voyager/layouts/er
 | 6 =Split window horizontally with current pane's path | 7 = Swap pane         | 8 = Resize pane up by 7   | 9 = Swap window to right     | 0 = Kill pane               | -                                             |
 | q = Split window vertically with current pane's path  | l = Previous window   | u = Select pane above     | o = Next window              | y = paste buffer            | \ = Syncronize panes                          |
 | j = Resize pane left by 20                            | h = Select pane left  | e = Select pane down      | a = Select pane on the right | i = Resize pane right by 20 | right arrow = new window with home directory  |
-| ;  = toogle pane zoom                                 | m = copy mode page up | , = Resize pane down by 7 | . = copy mode page down      | . = tmux fzf                | down arrow =  Clear screen and send Enter key |
+| ;  = toogle pane zoom                                 | m = copy mode page up | , = Resize pane down by 7 | . = copy mode page down      | . = tmux fzf                | down arrow =  Clear screen and send Enter key |
 
 
+## Conclusion
+This guide reflects my personal setup and preferences. By documenting this, I hope to help others that might wanna use Hyper/Meh in the terminal as information on this at the time of writing is sparse. 
 
-##### Neovim
-
-Finally the last piece of the puzzle - and the only one that "just worked" - getting tmux and neovim to work transparently in terms of moving / splitting windows can be found in a minimal version [here](https://github.com/GeorgOfenbeck/Meh-Terminal/blob/main/nvim/init.lua)
