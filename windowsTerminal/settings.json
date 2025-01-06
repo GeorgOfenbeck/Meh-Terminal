@@ -1,0 +1,621 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": 
+    [
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "id": "User.copy.644BA8F2",
+            "keys": "ctrl+c"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;55~"
+            },
+            "id": "User.sendInput.13158E15",
+            "keys": "ctrl+alt+shift+7"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;112~"
+            },
+            "id": "User.sendInput.4DE6350F",
+            "keys": "ctrl+alt+shift+p"
+        },
+        {
+            "command": "paste",
+            "id": "User.paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "id": "User.splitPane.A6751878",
+            "keys": "alt+shift+d"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;97~"
+            },
+            "id": "User.sendInput.BA481BDD",
+            "keys": "ctrl+alt+shift+a"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;98~"
+            },
+            "id": "User.sendInput.4C7927C8",
+            "keys": "ctrl+alt+shift+b"
+        },
+        {
+            "command": "find",
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;56~"
+            },
+            "id": "User.sendInput.908BE121",
+            "keys": "ctrl+alt+shift+8"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;59~"
+            },
+            "id": "User.sendInput.3486FDF0",
+            "keys": "ctrl+alt+shift+;"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;100~"
+            },
+            "id": "User.sendInput.868FB81A",
+            "keys": "ctrl+alt+shift+d"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;99~"
+            },
+            "id": "User.sendInput.CC667213",
+            "keys": "ctrl+alt+shift+c"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;101~"
+            },
+            "id": "User.sendInput.BB560F90",
+            "keys": "ctrl+alt+shift+e"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;102~"
+            },
+            "id": "User.sendInput.9128755F",
+            "keys": "ctrl+alt+shift+f"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[1;8B"
+            },
+            "id": "User.sendInput.E8E1764D",
+            "keys": "ctrl+alt+shift+down"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;103~"
+            },
+            "id": "User.sendInput.D8AAC737",
+            "keys": "ctrl+alt+shift+g"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;104~"
+            },
+            "id": "User.sendInput.290AE07E",
+            "keys": "ctrl+alt+shift+h"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;46~"
+            },
+            "id": "User.sendInput.E29C6D98",
+            "keys": "ctrl+alt+shift+period"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;105~"
+            },
+            "id": "User.sendInput.E19B3B73",
+            "keys": "ctrl+alt+shift+i"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;106~"
+            },
+            "id": "User.sendInput.D89BCE99",
+            "keys": "ctrl+alt+shift+j"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;107~"
+            },
+            "id": "User.sendInput.A6232606",
+            "keys": "ctrl+alt+shift+k"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;108~"
+            },
+            "id": "User.sendInput.9B6E74E3",
+            "keys": "ctrl+alt+shift+l"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;113~"
+            },
+            "id": "User.sendInput.F4A2B33C",
+            "keys": "ctrl+alt+shift+q"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;109~"
+            },
+            "id": "User.sendInput.8054CEC9",
+            "keys": "ctrl+alt+shift+m"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;110~"
+            },
+            "id": "User.sendInput.8C79D832",
+            "keys": "ctrl+alt+shift+n"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;111~"
+            },
+            "id": "User.sendInput.D0A6CDF7",
+            "keys": "ctrl+alt+shift+o"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;114~"
+            },
+            "id": "User.sendInput.FA7E9D58",
+            "keys": "ctrl+alt+shift+r"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;115~"
+            },
+            "id": "User.sendInput.88EC8D30",
+            "keys": "ctrl+alt+shift+s"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;116~"
+            },
+            "id": "User.sendInput.B4290D49",
+            "keys": "ctrl+alt+shift+t"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;117~"
+            },
+            "id": "User.sendInput.AAD5F02E",
+            "keys": "ctrl+alt+shift+u"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;118~"
+            },
+            "id": "User.sendInput.40E0022D",
+            "keys": "ctrl+alt+shift+v"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;119~"
+            },
+            "id": "User.sendInput.5899B5EB",
+            "keys": "ctrl+alt+shift+w"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;121~"
+            },
+            "id": "User.sendInput.759BD85C",
+            "keys": "ctrl+alt+shift+y"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;120~"
+            },
+            "id": "User.sendInput.9021FF2E",
+            "keys": "ctrl+alt+shift+x"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;122~"
+            },
+            "id": "User.sendInput.699E6594",
+            "keys": "ctrl+alt+shift+z"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;47~"
+            },
+            "id": "User.sendInput.E144B20A",
+            "keys": "ctrl+alt+shift+/"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;48~"
+            },
+            "id": "User.sendInput.5C3D636D",
+            "keys": "ctrl+alt+shift+0"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;49~"
+            },
+            "id": "User.sendInput.72351F18",
+            "keys": "ctrl+alt+shift+1"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;50~"
+            },
+            "id": "User.sendInput.4F97A93C",
+            "keys": "ctrl+alt+shift+2"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;51~"
+            },
+            "id": "User.sendInput.83B636C6",
+            "keys": "ctrl+alt+shift+3"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;52~"
+            },
+            "id": "User.sendInput.AFE1D143",
+            "keys": "ctrl+alt+shift+4"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;53~"
+            },
+            "id": "User.sendInput.F6DADD86",
+            "keys": "ctrl+alt+shift+5"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;54~"
+            },
+            "id": "User.sendInput.7DCD2DD0",
+            "keys": "ctrl+alt+shift+6"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;57~"
+            },
+            "id": "User.sendInput.B3FC5726",
+            "keys": "ctrl+alt+shift+9"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;92~"
+            },
+            "id": "User.sendInput.228035F",
+            "keys": "ctrl+alt+shift+\\"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;45~"
+            },
+            "id": "User.sendInput.ECDB5FE3",
+            "keys": "ctrl+alt+shift+minus"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;44~"
+            },
+            "id": "User.sendInput.FA6244B9",
+            "keys": "ctrl+alt+shift+comma"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[27;8;96~"
+            },
+            "id": "User.sendInput.C77D4503",
+            "keys": "ctrl+alt+shift+`"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[1;8A"
+            },
+            "id": "User.sendInput.BA297943",
+            "keys": "ctrl+alt+shift+up"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[1;8C"
+            },
+            "id": "User.sendInput.E3DA0C8E",
+            "keys": "ctrl+alt+shift+right"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "\u001b[1;8D"
+            },
+            "id": "User.sendInput.244675A1",
+            "keys": "ctrl+alt+shift+left"
+        }
+    ],
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{d8e96812-b789-5068-a5ae-10b2fb53e95f}",
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "font": 
+            {
+                "builtinGlyphs": false,
+                "face": "Hack Nerd Font Mono"
+            }
+        },
+        "list": 
+        [
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Command Prompt"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{963ff2f7-6aed-5ce3-9d91-90d99571f53a}",
+                "hidden": true,
+                "name": "Ubuntu-24.04",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{ce6167d2-7da5-516c-847b-3d9bb72481fb}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{5e5125dd-0326-5dde-aa36-c4b76875e1ef}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "colorScheme": "Tokyo Night Storm",
+                "font": 
+                {
+                    "face": "DejaVuSansM Nerd Font Mono"
+                },
+                "guid": "{d8e96812-b789-5068-a5ae-10b2fb53e95f}",
+                "hidden": false,
+                "name": "Ubuntu 24.04.1 LTS",
+                "source": "CanonicalGroupLimited.Ubuntu24.04LTS_79rhkp1fndgsc"
+            },
+            {
+                "guid": "{16208362-94fc-5b1f-a491-5b2624d5ab56}",
+                "hidden": true,
+                "name": "Visual Studio Debug Console",
+                "source": "VSDebugConsole"
+            },
+            {
+                "guid": "{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}",
+                "hidden": false,
+                "name": "Ubuntu 22.04.5 LTS",
+                "source": "CanonicalGroupLimited.Ubuntu22.04LTS_79rhkp1fndgsc"
+            },
+            {
+                "guid": "{17bf3de4-5353-5709-bcf9-835bd952a95e}",
+                "hidden": true,
+                "name": "Ubuntu-22.04",
+                "source": "Windows.Terminal.Wsl"
+            }
+        ]
+    },
+    "schemes": 
+    [
+        {
+            "background": "#1A1B2C",
+            "black": "#414868",
+            "blue": "#7AA2F7",
+            "brightBlack": "#414868",
+            "brightBlue": "#7AA2F7",
+            "brightCyan": "#7DCFFF",
+            "brightGreen": "#73DACA",
+            "brightPurple": "#BB9AF7",
+            "brightRed": "#F7768E",
+            "brightWhite": "#C0CAF5",
+            "brightYellow": "#E0AF68",
+            "cursorColor": "#C0CAF5",
+            "cyan": "#7DCFFF",
+            "foreground": "#A9B1DC",
+            "green": "#73DACA",
+            "name": "Tokyo Night",
+            "purple": "#BB9AF7",
+            "red": "#F7768E",
+            "selectionBackground": "#28344A",
+            "white": "#C0CAF5",
+            "yellow": "#E0AF68"
+        },
+        {
+            "background": "#D5D6DB",
+            "black": "#0F0F14",
+            "blue": "#34548A",
+            "brightBlack": "#0F0F14",
+            "brightBlue": "#34548A",
+            "brightCyan": "#0F4B6E",
+            "brightGreen": "#33635C",
+            "brightPurple": "#5A4A78",
+            "brightRed": "#8C4351",
+            "brightWhite": "#343B58",
+            "brightYellow": "#8F5815",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#0F4B6E",
+            "foreground": "#343B58",
+            "green": "#33635C",
+            "name": "Tokyo Night Light",
+            "purple": "#5A4A78",
+            "red": "#8C4351",
+            "selectionBackground": "#FFFFFF",
+            "white": "#343B58",
+            "yellow": "#8F5815"
+        },
+        {
+            "background": "#24283B",
+            "black": "#414868",
+            "blue": "#7AA2F7",
+            "brightBlack": "#414868",
+            "brightBlue": "#7AA2F7",
+            "brightCyan": "#7DCFFF",
+            "brightGreen": "#73DACA",
+            "brightPurple": "#BB9AF7",
+            "brightRed": "#F7768E",
+            "brightWhite": "#C0CAF5",
+            "brightYellow": "#E0AF68",
+            "cursorColor": "#C0CAF5",
+            "cyan": "#7DCFFF",
+            "foreground": "#A9B1DC",
+            "green": "#73DACA",
+            "name": "Tokyo Night Storm",
+            "purple": "#BB9AF7",
+            "red": "#F7768E",
+            "selectionBackground": "#28344A",
+            "white": "#C0CAF5",
+            "yellow": "#E0AF68"
+        }
+    ],
+    "theme": "dark",
+    "themes": []
+}
